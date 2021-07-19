@@ -1,0 +1,20 @@
+.container-etudiants h1{
+    @include h(var(--black))
+}
+.actualites-list-card{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include card(40.4rem,68.7rem,2.4rem)
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .actualites-list-card {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 3.2rem;
+        row-gap: 4rem;
+    }
+}

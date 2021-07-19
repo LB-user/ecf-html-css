@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+    line-height: 1.5;
+    color: #000;
+    background-color: white;
+}
+section, footer{
+    min-width: 1rem;
+}
+.container {
+    min-width: 1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 48em) { /* eq 768px */
+    .container {
+        max-width: 72.8rem;
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .container {
+        max-width: 95.2rem;
+    }
+}
+
+@media screen and (min-width: 80em) { /* eq 1200px */
+    .container {
+        min-width: 128rem;
+    }
+}
+
+.void{
+    height: 20rem;
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .void {
+        height: 15rem;
+    }
+}
+@media screen and (min-width: 80em) { /* eq 1200px */
+    .void {
+        height: 10rem;
+    }
+}
+

@@ -1,0 +1,9 @@
+.button{
+    background-color: var(--orange);
+    color: white;
+}
+.button:hover,
+.button:focus{
+    background-color: #fff;
+    color: var(--orange);
+}

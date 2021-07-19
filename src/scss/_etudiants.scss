@@ -1,0 +1,24 @@
+.container-etudiants h1{
+    @include h(var(--black))
+}
+
+.etudiants-list-perso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    list-style: none;
+    padding-right: 4rem;
+    @include perso(var(--black), var(--orange));
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .etudiants-list-perso {
+        padding-right: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .etudiants-list-perso {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

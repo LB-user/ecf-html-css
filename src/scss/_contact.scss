@@ -1,0 +1,128 @@
+.container-contact {
+    min-width: 32rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .container-contact {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 7.85rem 26.8rem 1fr;
+        max-width: 51rem
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .container-contact {
+        max-width: 73.4rem;
+    }
+}
+
+@media screen and (min-width: 80em) { /* eq 1200px */
+    .container-contact {
+        min-width: 103rem;
+    }
+}
+.container-contact h1{
+    @include h(var(--black));
+    margin-bottom: 10rem;
+}
+
+.form-contact{
+    display: grid;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 7.85rem 7.85 26.8rem 1fr;
+    row-gap: 2rem;
+    column-gap: 3.2rem;
+    font-size: 2rem;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .form-contact {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 7.85rem 26.8rem 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.form-div-name input,
+.form-div-mail input,
+.form-div-message textarea{
+    border: none;
+    border-bottom: 1px solid var(--black);
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    &::placeholder{
+        font-weight: 400;
+        font-style: italic;
+        color:#33110080;
+        font-size: 2rem;
+    }
+}
+
+.form-div-name,
+.form-div-mail{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .form-div-name {
+        grid-column: 1/2;
+    }
+    .form-div-mail{
+        grid-column: 2/3;
+    }
+}
+
+.form-div-message{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    min-height: 26.8rem;
+    width: 100%;
+    margin-top: 4.4rem;
+    overflow: auto;
+    resize: none;
+}
+
+.form-div-button{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.form-div-button button{
+    display: flex;
+    color:white;
+    background-color:var(--orange);
+    max-width: 18rem;
+    min-height: 4.8rem;
+    padding: 1rem 2rem;
+    line-height: 1.2;
+    border: .1rem solid var(--orange);
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+    transition: background-color .5s ease;
+    &:hover,
+    &:focus{
+      color: var(--orange);
+      background-color: white;
+      border: .1rem solid var(--orange);
+      padding: -.1rem;
+    }
+    & span{
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.4rem;
+        padding-right: 1.5rem;
+        
+    }
+    & img{
+        stroke: var(--orange);
+        padding-top: .5rem;
+    }
+}

@@ -1,0 +1,39 @@
+.container-conf {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .container-conf {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 7.85rem 26.8rem 1fr;
+        max-width: 51rem
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .container-conf {
+        max-width: 73.4rem;
+    }
+}
+
+@media screen and (min-width: 80em) { /* eq 1200px */
+    .container-conf {
+        min-width: 84rem;
+    }
+}
+.container-conf h1{
+    word-break: break-all;
+    @include h(var(--black));
+}
+.container-conf p{
+    margin-bottom: 4.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .container-conf p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

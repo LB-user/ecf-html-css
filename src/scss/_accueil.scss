@@ -1,0 +1,159 @@
+/* Welcome */
+
+.section-welcome{
+    background-image: url(../img/welcome-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: none;
+    
+    color: white;
+    position: relative;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .section-welcome{
+        min-height: 40rem;
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .section-welcome {
+        min-height: 71.1rem;
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .container-welcome{
+        position: absolute;
+        right: 0;
+        top: 24rem;
+    }
+}
+.welcome{
+    max-width: 95.6rem;
+    min-height: 55.1rem;
+    background-color: var(--grey);
+    
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .welcome {
+        max-height: 45.1rem;
+    }
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .welcome {
+        position: relative;
+        min-height: 35.1rem;
+        
+    }
+}
+
+.welcome h1{
+    padding-top: 2.3rem;
+    padding-left: 2.4rem;
+    font-family: Raleway, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .welcome h1{
+        font-size: 7.2rem;
+    }
+}
+.button-welcome {
+    display: inline-block;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .button-welcome{
+        right: 2.8rem;
+        bottom: 3rem;
+    }
+}
+.p-button{
+    padding: 2rem 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+/* Les dernières Actualités */
+.list-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    @include card(40.4rem,0rem, 1.6rem);
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .list-card {
+        display: grid;
+        padding-left: 0;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3.2rem;
+    }
+}
+.section-last-news h2{
+    @include h (var(--black));
+    
+}
+
+/* Rencontrer les étudiants */
+
+.section-meet{
+    background-color: var(--orange)
+}
+.container-meet h2{
+    @include h(white)
+}
+.container-meet ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+    list-style: none;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    @include perso (white, white)
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .container-meet ul {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10.9rem;
+    }
+  }
+@media screen and (min-width: 62em) { /* eq 992px */
+    .container-meet ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Les modules de Formation */
+.container-module h2 {
+    @include h(var(--black))
+}
+
+.modules-list-card{
+    padding-left:auto ;
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3.2rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    @include card(62.2rem,60.8rem, 4rem)
+}
+@media screen and (min-width: 48em) { /* eq 768px */
+    .modules-list-card {
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

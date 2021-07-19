@@ -1,0 +1,97 @@
+footer{
+    background-color: var(--orange);
+    min-height: 24.8rem;
+    display: flex;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 62em) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .footer-nav-legal > a  {
+        margin-right: 2rem;
+    }
+}
+.footer-address {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: 3rem;
+}
+@media screen and (min-width: 62em) { /* eq 992px */
+    .section-welcome {
+        margin-left: 0;
+    }
+}
+.footer-address p{
+    font-size: 2rem;
+    color: white;
+    line-height: 2.25;
+}
+.footer-address a:hover,
+.footer-address a:focus{
+    text-shadow: (0 0 .5rem rgba(255, 255, 255, 1));
+}
+.footer-address p span{
+    font-weight: 600;
+}
+.footer-nav-legal{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+@media screen and (min-width: 62em){
+    .footer-nav-legal{  
+    flex-direction: row;
+    margin-left: 16rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    }
+}
+.footer-nav-legal a  {
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.footer-nav-legal a:hover,
+.footer-nav-legal a:focus{
+    text-decoration: underline rgba(255, 255, 255, 1);
+}
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-social-link {
+    margin-right: 5rem;
+}
+.footer-social-link:nth-child(2){
+    padding-top: .3rem;
+}
+.footer-social-item svg {
+    transition: .3s
+}
+
+.footer-social-item:hover svg,
+.footer-social-item:focus  svg{
+    filter: drop-shadow(0 0 .5rem rgba(255, 255, 255, 1))
+}

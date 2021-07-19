@@ -1,0 +1,234 @@
+ @mixin h ($color){
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $color;
+}
+@mixin card($width, $height, $margin) {
+
+    .card{
+        max-width: $width;
+        min-height: $height;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        margin-top:4rem;
+        margin-bottom: 0;
+        box-shadow: 0px 0px 48px var(--light-grey) ;
+    
+    &-img{
+        width: $width;
+        height: 26rem;
+    }
+    &-text{
+        padding-left: 1.4rem;
+        padding-right: 1.6rem;
+    }
+    &-date{
+        display: flex;
+        padding-top: 2.4rem;
+        font-size: 1.6rem;
+        &-img{
+            padding-right: .8rem;
+        }
+    }
+    &:hover{
+        background-color: white;
+        box-shadow: 0 ;
+    }
+    &-title{
+        font-family: "Raleway" , sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: $margin;
+        margin-bottom: $margin;
+    }
+    &-p{
+        font-size: 2rem;
+        margin-bottom: $margin;
+    }
+    &-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-text{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 0;
+        }
+       
+    }
+    
+    &-link{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color:white;
+        background-color:var(--orange);
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: auto;
+        padding-right: auto;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        border: .1rem solid var(--orange);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        transition: background-color .5s ease;
+        &:hover,
+        &:focus{
+          color: var(--orange);
+          background-color: white;
+          border: .1rem solid var(--orange);
+          padding: -.1rem;
+        }
+        &-p{
+            text-align: center;
+            font-weight: 600;
+            font-size: 2.4rem;
+            padding-right: 1.5rem;
+            
+        }
+        & img{
+            stroke: var(--orange);
+            padding-top: .5rem;
+        }
+    }
+  }
+}
+
+@mixin perso($color1, $color2){
+    .perso{
+        
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        &-div{
+            width: 100%;
+            & img{
+              margin-left: auto;
+              margin-right: auto;
+            }
+        }
+        &-title{
+            color: $color1;
+            width: 100%;
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 600;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        &-link{
+            color: $color2;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 1.6rem;
+            text-decoration: underline;
+            &:hover,
+            &:focus{
+              text-shadow: $color1 1px 0 10px;;
+            }
+        }
+    }
+    
+  }
+    
+
+
+@mixin sliders (){
+.slideshow-container {
+    box-sizing:border-box;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+  }
+  
+  .mySlides {
+      display: none;
+      scroll-snap-align: start;
+    }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .buttons-slide{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+  }
+  .button-slide {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 2px;
+    background-color: white;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    padding: auto;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+  
+  .active, .button-slide:hover {
+    background-color: var(--orange);
+    color: white;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}
