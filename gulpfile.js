@@ -106,12 +106,12 @@ function browserSync() {
     browsersync.init({
         /* Pour utiliser avec PHP, enlever le paramètre 'server' et utiliser le paramètre 'proxy' en le configurant sur l'url de MAMP (voir exemple)*/
         
-        proxy: 'http://localhost:8888/2021-3-php-init/ecf-test/dist/',
+        proxy: 'http://localhost:8888/ECF/ecf-html-css/dist/',
         /*
         server: {
             baseDir: 'dist/'
         },*/
-        port: 3000
+        // port: 3000
     })
 }
 

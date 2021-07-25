@@ -1,9 +1,10 @@
+<?php $section='Home'; ?>
 <section class="section-welcome">
     <div class="container container-welcome">
 
         <article class="welcome">
             <h1>Bienvenue sur le site de la promotion DWWM2019-2</h1>
-            <a href="index.php?section=3" class="button button-welcome">
+            <a href="index.php?section=Etudiants" class="button button-welcome">
                 <div>
                     <p class="p-button">Rencontrez nos étudiants</p>
                 </div>
@@ -46,7 +47,7 @@
                     <p class="card-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="card-button">
-                    <a href="index.php?section=8" class="card-link">
+                    <a href="index.php?section=Actualites" class="card-link">
                         <p class="card-link-p">Lire la suite</p>
                         <div><img src="img/Icon-feather-arrow-right-circle-1.svg" alt=">"></div>
                     </a>
@@ -82,7 +83,7 @@
                     <p class="card-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="card-button">
-                    <a href="index.php?section=8" class="card-link">
+                    <a href="index.php?section=Actualites" class="card-link">
                         <p class="card-link-p">Lire la suite</p>
                         <div>
                             <img src="img/Icon-feather-arrow-right-circle-1.svg" alt=">">
@@ -120,7 +121,7 @@
                     <p class="card-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="card-button">
-                    <a href="index.php?section=8" class="card-link">
+                    <a href="index.php?section=Actualites" class="card-link">
                         <p class="card-link-p">Lire la suite</p>
                         <div><img src="img/Icon-feather-arrow-right-circle-1.svg" alt=">"></div>
                     </a>
@@ -136,22 +137,22 @@
             <li class="perso">
                 <div class="perso-div"><img src="img/Photo-4_resultat.webp" srcset="img/Photo-4@2x_resultat.webp 2x" alt="Photo"></div>
                 <h3 class="perso-title">Francine Auhi</h3>
-                <a href="index.php?section=9" class="perso-link">En savoir plus</a>
+                <a href="index.php?section=Profil" class="perso-link">En savoir plus</a>
             </li>
             <li class="perso">
                 <div class="perso-div"><img src="img/Photo-8_resultat.webp" srcset="img/Photo-8@2x_resultat.webp 2x" alt="Photo"></div>
                 <h3 class="perso-title">Ali Korn</h3>
-                <a href="index.php?section=9" class="perso-link">En savoir plus</a>
+                <a href="index.php?section=Profil" class="perso-link">En savoir plus</a>
             </li>
             <li class="perso">
                 <div class="perso-div"><img src="img/Photo-7_resultat.webp" srcset="img/Photo-7@2x_resultat.webp 2x" alt="Photo"></div>
                 <h3 class="perso-title">Jean Vascrit</h3>
-                <a href="index.php?section=9" class="perso-link">En savoir plus</a>
+                <a href="index.php?section=Profil" class="perso-link">En savoir plus</a>
             </li>
             <li class="perso">
                 <div class="perso-div"><img src="img/Photo_resultat.webp" srcset="img/Photo@2x_resultat.webp 2x" alt="Photo"></div>
                 <h3 class="perso-title">Lara Velle</h3>
-                <a href="index.php?section=9" class="perso-link">En savoir plus</a>
+                <a href="index.php?section=Profil" class="perso-link">En savoir plus</a>
             </li>
         </ul>
     </div>
@@ -167,7 +168,7 @@
                     <p class="card-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="card-button">
-                    <a href="index.php?section=8" class="card-link">
+                    <a href="index.php?section=Actualites" class="card-link">
                         <p class="card-link-p">Lire la suite</p>
                         <div>
                             <img src="img/Icon-feather-arrow-right-circle-1.svg" alt=">">
@@ -182,7 +183,7 @@
                     <p class="card-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="card-button">
-                    <a href="index.php?section=8" class="card-link">
+                    <a href="index.php?section=Actualites" class="card-link">
                         <p class="card-link-p">Lire la suite</p>
                         <div>
                             <img src="img/Icon-feather-arrow-right-circle-1.svg" alt=">">

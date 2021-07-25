@@ -1,3 +1,4 @@
+<?php $section='Contact'; ?>
 <section>
 
     <div class="container-contact">

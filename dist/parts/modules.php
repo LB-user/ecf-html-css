@@ -1,3 +1,4 @@
+<?php $section='Modules'; ?>
 <section class="modules-section">
     <div class="modules-hero-container">
         <h1>Module HTML / CSS</h1>

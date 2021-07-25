@@ -1,3 +1,4 @@
+<?php $section='Actualites'; ?>
 <section>
     <div class="infos-actus-container">
         <img src="img/Photo-3_resultat.webp" alt="Photo d'un ordinateur" class="card-img">

@@ -8,12 +8,13 @@
     align-items: center;
     row-gap: 3rem;
     list-style: none;
-    padding-right: 4rem;
+    padding-left: 0;
     @include perso(var(--black), var(--orange));
+    
 }
 @media screen and (min-width: 48em) { /* eq 768px */
     .etudiants-list-perso {
-        padding-right: 0;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }

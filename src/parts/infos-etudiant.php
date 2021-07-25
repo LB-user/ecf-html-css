@@ -1,3 +1,4 @@
+<?php $section='Profil'; ?>
 <section>
     <div class="container student-container">
         <div class="student-img">

@@ -1,3 +1,4 @@
+<?php $section='Confidentialite'; ?>
 <section>
 
     <div class="container-conf">

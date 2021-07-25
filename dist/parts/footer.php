@@ -11,8 +11,8 @@
                     <a href="tel:0247402680"><p>T : 02 47 40 26 80</p></a>
                 </address>
                 <nav class="footer-nav-legal">
-                    <a href="index.php?section=10"">Mentions légales</a>
-                    <a href="index.php?section=6"">Politique de confidentialité</a>
+                    <a href="index.php?section=10">Mentions légales</a>
+                    <a href="index.php?section=Confidentialite"">Politique de confidentialité</a>
                 </nav>
                 <nav class="footer-nav-social">
                     <ul class="footer-social-links">
@@ -36,9 +36,5 @@
             </div>
     
         </footer>
-        <script src="js/bundle.min.js"></script>
-    </body>
-
-    
-    
+    </body>  
 </html>
